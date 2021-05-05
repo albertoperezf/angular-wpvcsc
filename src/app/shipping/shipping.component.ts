@@ -13,6 +13,6 @@ export class ShippingComponent implements OnInit {
     private cartService: CartService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 }

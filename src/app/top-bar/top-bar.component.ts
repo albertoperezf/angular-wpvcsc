@@ -7,14 +7,19 @@ import { CartService } from '../cart.service';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
-  storeName = 'AJPF Store';
+  storeName: string = 'AJPF Store';
   items = this.cartService.getItems();
 
   constructor(
     private cartService: CartService
   ) { }
 
-  ngOnInit() {
+  ngOnChanges(): void {
+    console.log('Change');
+  }
+
+  ngOnInit(): void {
+    console.log('Items: ', this.items);
   }
 }
 

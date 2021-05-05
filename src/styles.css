@@ -17,6 +17,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 5em;
+  width: 100%;
 }
 
 router-outlet + *  {
@@ -122,17 +123,13 @@ app-down-bar {
 
 app-down-bar {
   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-app-top-bar h1 {
-  color: white;
-  margin: 0;
-}
-
-app-down-bar h3 {
+app-top-bar h2,
+app-down-bar h2 {
   color: white;
   margin: 0;
 }
